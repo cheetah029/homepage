@@ -3,6 +3,17 @@
 <head>
 <title>Aaron's web page!</title>
 <link rel="stylesheet" href="style.css" type="text/css">
+<script>
+window.onload = function() {
+  // Get all the links on the page
+  var links = document.getElementsByTagName("a");
+
+  // Loop through the links and add the target="_blank" attribute
+  for (var i = 0; i < links.length; i++) {
+    links[i].setAttribute("target", "_blank");
+  }
+};
+</script>
 </head>
 <body>
   
